@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_mecanicos.css">
+    <title>Mecânicos</title>
+</head>
+
+<body>
+    <header>
+        <img src="/images/logo.png" id="Logo" alt="Logo">
+    </header>
+
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form onsubmit="return false;">
+                <div id="areaSeta" onclick="voltar()"><img id="voltar" src="/images/voltar.png" alt="Voltar"></div>
+                <table>
+                    <tr>
+                        <th><button id="botaoMecanicos">Mecânicos</button></th>
+                        <th><button id="botaoVeiculos" onclick="telaDeVeiculos()">Veículos</button></th>
+                    </tr>
+                </table>
+                <div id="planilha">
+                    <div>
+                        <p>Código do Mecânico</p>
+                        <input id="buscaPorIDMecanicos" type="text" oninput="aplicarFiltros()">
+                    </div>
+                    <div>
+                        <p>Nome do Mecânico</p>
+                        <input id="buscaPorNome" type="text" oninput="aplicarFiltros()">
+                    </div>
+                    <div>
+                        <p>Centro de Distribuição</p>
+                        <select name="" id="buscaPorCD" onchange="aplicarFiltros()">
+                            <option value="">Selecione um Centro</option>
+                            <option value="1">Ribeirão Preto</option>
+                            <option value="2">São Paulo</option>
+                            <option value="3">Campinas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Área da Tabela com rolagem -->
+                <div id="areaDaTabela"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script_mecanicos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #658070;
+    background-image: url("/images/fundo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span.carregando {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    display: block;
+    border: 25px solid rgb(226, 112, 5);
+    border-top: 25px solid transparent;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+.erro {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}

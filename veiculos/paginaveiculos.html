@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_veiculos.css">
+    <title>Veículos</title>
+</head>
+
+<body>
+    <header>
+        <img src="/images/logo.png" id="Logo" alt="Logo">
+    </header>
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form>
+                <div id="areaSeta" onclick="voltar()">
+                    <img id="voltar" src="/images/voltar.png" alt="Voltar">
+                </div>
+                <table>
+                    <tr>
+                        <th><button id="botaoMecanicos" type="button" onclick="telaDeMecanicos()">Mecânicos</button></th>
+                        <th><button id="botaoVeiculos" type="button" onclick="criarTabelaVeiculos(event)">Veículos</button></th>
+                    </tr>
+                </table>
+
+                <div id="planilha">
+                    <div>
+                        <p>Código do Veículo</p>
+                        <input id="buscaPorIDVeiculos" type="text" oninput="aplicarFiltros()">
+                    </div>
+                    <div>
+                        <p>Placa do Veículo</p>
+                        <input id="buscaPorPlaca" type="text" oninput="aplicarFiltros()">
+                    </div>
+                    <div>
+                        <p>Centro de Distribuição do Veículo</p>
+                        <select name="centroDistribuicao" id="buscaPorCD" onchange="aplicarFiltros()">
+                            <option value="">Selecione um Centro</option>
+                            <option value="1">Ribeirão Preto</option>
+                            <option value="2">São Paulo</option>
+                            <option value="3">Campinas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Área da Tabela -->
+                <div id="areaDaTabela"></div>
+                <div class="loader" id="loader" style="display: none;">Carregando...</div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script_veiculos.js"></script>
+</body>
+
+</html>

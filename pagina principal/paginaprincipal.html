@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+    <link rel="stylesheet" href="style_paginaprincipal.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="/images/logo.png" id="Logo" alt="Logo">
+        <span onclick="logOut()" class="material-symbols-outlined">account_circle</span>
+    </header>
+
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form>
+                <div id="areaSeta"></div>
+                <table>
+                    <tr>
+                        <th><button type="button" id="botaoMecanicos" onclick="tabelaDeMecanicos()">Mecânicos</button></th>
+                        
+                        <th><button type="button" id="botaoVeiculos" onclick="tabelaDeVeiculos()">Veículos</button></th>
+                    </tr>
+                </table>
+                <div id="planilha">
+                    <div>
+                        <p>Data</p>
+                        <p><input id="buscaPorData" type="date" onchange="filtrarOrdens()"></p>
+                    </div>
+                    <div>
+                        <p>Centro de Distribuição</p>
+                        <select name="" id="buscaPorCD">
+                            <option value="">Selecione um Centro</option>
+                            <option value="1" onclick="filtrarOrdens()">Ribeirão Preto</option>
+                            <option value="2" onclick="filtrarOrdens()">Guarulhos</option>
+                            <option value="3" onclick="filtrarOrdens()">Campinas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="areaDaTabela"></div>
+            </form>
+        </div>
+    </div>
+    <div class="containerBotoes">
+        <button class="botao1" onclick="adicionar()">+</button>
+        <button class="botao1" onclick="abrirModalDeletar()">🗑️</button>
+    </div>
+
+    <script src="script_paginaprincipal.js"></script>
+</body>
+
+</html>

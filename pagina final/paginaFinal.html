@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_paginaFinal.css">
+    <title>Programações</title>
+</head>
+
+<body>
+    <header>
+        <img onclick='window.location.href="paginaprincipal.html"' src="logo.png" id="Logo" alt="Logo">
+    </header>
+
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form>
+                <div id="areaSeta"></div>
+                <div id="planilha">
+                    <div>
+                        <p>Data</p>
+                        <p><input id="buscaPorData" type="date" onchange="filtrarOrdens()"></p>
+                    </div>
+                    <div>
+                        <p>Nome mecanico</p>
+                        <p><input id="buscaPorCD" type="text" oninput="filtrarOrdens()"></p>
+                    </div>
+                </div>
+                <div id="areaDaTabela"></div>
+                <div id="pagination"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script_paginaFinal.js"></script>
+</body>
+
+</html>

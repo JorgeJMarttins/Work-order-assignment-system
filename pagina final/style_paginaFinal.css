@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #658070;
+    background-image: url("/images/fundo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+#Logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: 1300px; /* Aumenta a largura */
+    max-height: 85vh; /* Ajusta o comprimento da tela */
+    padding: 20px;
+    margin-top: 90px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    overflow-y: auto; 
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #81a425;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6c8e1f;
+}
+
+#planilha {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#areaDaTabela {
+    flex-grow: 1;
+    margin-top: 30px;
+    overflow-y: auto;
+    max-height: 400px; /* Limita a altura da área da tabela */
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-button {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #81a425;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.page-button.active {
+    background-color: #1d4f2b;
+}
+
+#voltar {
+    cursor: pointer;
+    width: 60px;
+}

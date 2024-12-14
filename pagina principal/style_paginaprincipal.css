@@ -1,0 +1,368 @@
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #658070;
+  background-image: url("/images/fundo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+header {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+table,
+button {
+  background-color: white;
+  border: white;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 55px;
+}
+
+button {
+  font-size: 20px;
+  border: 2px solid #81a425;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #81a425;
+  color: black;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  width: 900px;
+  min-height: 480px;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+#Logo {
+  width: 100px;
+  height: auto;
+}
+
+td,
+.cabecalho {
+  border: solid black 2px;
+  border-collapse: collapse;
+}
+
+#planilha {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#voltar {
+  cursor: pointer;
+  width: 60px;
+}
+
+.containerBotoes {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.botao1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0a5b3c;
+  color: white;
+  border: solid black 2px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.botao2 {
+  width: 55px;
+  height: 55px;
+  background-color: #fffbe4;
+  color: black;
+  border: solid black 2px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+/* Estilo do Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  /* Tamanho do modal */
+  border: 1px solid #888;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho do Modal */
+.modal-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Estilo das Labels */
+.modal-content label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Estilo dos Inputs */
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Botão de ação */
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: #81a425;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-content button:hover {
+  background-color: #6c8e1f;
+}
+
+/* Fechar Modal */
+.modal .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilo das ordens no modal - Exibindo as ordens em linha */
+#ordensContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* Aumentando o espaçamento entre as ordens */
+  margin-top: 20px;
+}
+
+/* Cada ordem individual */
+#ordensContainer .ordem {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: calc(33% - 15px);
+  /* Exibindo 3 ordens por linha */
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+#ordensContainer .ordem:hover {
+  transform: scale(1.05);
+  /* Efeito ao passar o mouse sobre a ordem */
+}
+
+#ordensContainer .ordem span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo dos checkboxes */
+#ordensContainer input[type="checkbox"] {
+  margin-top: 10px;
+  transform: scale(1.2);
+  /* Aumentando o tamanho do checkbox */
+  cursor: pointer;
+}
+
+/* Estilo do label do checkbox */
+#ordensContainer label {
+  font-size: 16px;
+  color: #333;
+  margin-left: 5px;
+}
+
+/* Responsividade - Em telas menores */
+@media (max-width: 768px) {
+  .modal-content {
+      width: 90%;
+  }
+
+  #ordensContainer .ordem {
+      width: calc(50% - 15px);
+      /* Exibindo 2 ordens por linha em telas menores */
+  }
+}
+
+
+header {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 98%; /* Para ocupar toda a largura */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .material-symbols-outlined {
+  margin-right: 20px; /* Espaço do lado direito da página */
+  cursor: pointer;    /* Opcional: adiciona um cursor de ponteiro */
+  font-size: 48px;    /* Ajusta o tamanho do ícone se necessário */
+  color: rgb(184, 177, 177);        /* Cor do ícone */}
+
+.container {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+}
+
+#areaDaTabela {
+  flex-grow: 1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  margin: 0 5px;
+  padding: 5px 15px;
+  border: 1px solid #81a425;
+  background-color: white;
+  cursor: pointer;
+}
+
+.page-button.active {
+  background-color: #81a425;
+  color: white;
+}
+
+.page-button:hover {
+  background-color: #81a425;
+  color: white;
+}
+
+.close {
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+      padding: 15px;
+  }
+
+  table {
+      width: 100%;
+      font-size: 12px;
+  }
+
+  th,
+  td {
+      padding: 10px;
+  }
+
+  #planilha {
+      flex-direction: column;
+  }
+
+  #planilha div {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+
+  .containerBotoes {
+      bottom: 10px;
+      right: 10px;
+      gap: 10px;
+  }
+}
+#Ct{
+  cursor: pointer;
+}

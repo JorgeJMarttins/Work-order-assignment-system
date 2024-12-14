@@ -1,5 +1,5 @@
 require("dotenv").config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;  // Se não encontrar o PORT, usa 3000 como padrão
 const stringSQL = process.env.CONNECTION_STRING;
 
 const express = require("express");
@@ -37,18 +37,18 @@ function converteTempoParaMinutos(tempo) {
 }
 
 // Rota DELETE para apagar a programação
-app.delete('/programacao/:codigoCentroDistribuicao', (req, res) => {
+app.delete('/programacao/:codigoCentroDistribuicao', async (req, res) => {  // Agora é async
     try {
-        const codCentro = req.params.codigoCentroDistribuicao
+        const codCentro = req.params.codigoCentroDistribuicao;
 
-        const sql = `DELETE FROM  daroca1.programacao2 WHERE codigoCentroDistribuicao = ${codCentro}`;
+        const sql = `DELETE FROM daroca1.programacao2 WHERE codigoCentroDistribuicao = ${codCentro}`;
 
-        execQuery(sql)
-        res.sendStatus(201)
+        await execQuery(sql);  // Espera a execução da consulta
+        res.sendStatus(204);  // Corrigido para 204 (No Content)
     } catch (error) {
-        res.status(400).json({ error: 'Erro na exclusão dos dados. ' })
+        res.status(400).json({ error: 'Erro na exclusão dos dados.' });
     }
-})
+});
 
 // Rota POST para gerar a programação de ordens de serviço
 app.post('/programacao', async (req, res) => {
@@ -56,7 +56,7 @@ app.post('/programacao', async (req, res) => {
         const data = req.body.data; // A data já vem no formato YYYY-MM-DD
         const codigoCentroDistribuicao = req.body.codigoCentroDistribuicao;
         const ordens = req.body.ordens
-        console.log("cod:",ordens);
+        console.log("cod:", ordens);
         console.log(codigoCentroDistribuicao);
         console.log(data);
 
@@ -78,19 +78,6 @@ app.post('/programacao', async (req, res) => {
             cargaHorariaMecanico[mecanico.codigoMecanico] = 0;
         });
 
-        // Função para converter tempo para minutos
-        const converteTempoParaMinutos = (tempoEstimado) => {
-            const [horas, minutos] = tempoEstimado.split(':').map(Number);
-            return horas * 60 + minutos;
-        };
-
-        // Função para formatar o horário em 'HH:MM'
-        const formataHora = (horaEmMinutos) => {
-            const horas = Math.floor(horaEmMinutos / 60);
-            const minutos = horaEmMinutos % 60;
-            return `${String(horas).padStart(2, '0')}:${String(minutos).padStart(2, '0')}`;
-        };
-
         // Hora inicial de trabalho (08:15)
         let horaAtual = horaDeInicio;
 
@@ -108,8 +95,6 @@ app.post('/programacao', async (req, res) => {
                 console.log(`Ordem ${ordem.numeroOrdemServico} ignorada. Não escolhida.`);
                 continue;
             }
-            
-            
 
             let mecanicoSelecionado = null;
             const tempoEstimadoMinutos = converteTempoParaMinutos(ordem.tempoEstimado);
@@ -159,8 +144,6 @@ app.post('/programacao', async (req, res) => {
 
                     const intervaloHorario = `${horaInicioNovoDia} - ${horaFimNovoDia}`;
                     const nomeUsuario = req.body.nomeUsuario;
-                    console.log(nomeUsuario);
-                    console.log(req.body);
 
                     // Atribuindo a ordem ao próximo dia
                     const sql = `INSERT INTO daroca1.programacao2
@@ -185,9 +168,6 @@ app.post('/programacao', async (req, res) => {
                     const horaFim = formataHora(horaAtual);
                     const intervaloHorario = `${horaInicio} - ${horaFim}`;
                     const nomeUsuario = req.body.nomeUsuario;
-                    console.log(nomeUsuario);
-                    console.log(req.body);
-                    
 
                     console.log(`Ordem ${ordem.numeroOrdemServico} atribuída a ${mecanicoSelecionado.nome} de ${intervaloHorario}.`);
 
@@ -232,7 +212,6 @@ app.get("/programacao", async (req, res) => {
         res.status(500).json({ error: 'Erro ao buscar os programacoes.' });
     }
 });
-
 
 // Rota principal
 app.use("/", (req, res) => {

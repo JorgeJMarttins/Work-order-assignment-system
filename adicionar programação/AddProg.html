@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Programação</title>
+    <link rel="stylesheet" href="style_AddProg.css">
+</head>
+<body>
+    <header>Gerenciamento de Programação</header>
+
+    <main>
+        <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+
+            <label for="centroDistribuicao">Centro de Distribuição:</label>
+            <input type="text" id="centroDistribuicao" required>
+        </div>
+
+        <div class="form-group">
+            <button id="carregarOrdensBtn">Carregar Ordens</button>
+            <button id="selecionarTodosBtn">Selecionar Todos</button>
+        </div>
+
+        <div style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; background-color: #45a049;">
+            <table id="ordensTabela" class="table">
+                <thead>
+                    <tr>
+                        <th>Selecionar</th>
+                        <th>Número</th>
+                        <th>Tipo de Manutenção</th>
+                        <th>Status</th>
+                        <th>Código do Veículo</th>
+                        <th>Criada em</th>
+                        <th>Tempo Estimado</th>
+                        <th>Código do Centro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As linhas serão adicionadas dinamicamente -->
+                </tbody>
+            </table>
+        </div>
+        
+
+        <button id="adicionarBtn" style="display: none;">Gerar Programação</button>
+    </main>
+
+    <script src="script_AddProg.js"></script>
+</body>
+</html>

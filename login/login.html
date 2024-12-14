@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+    
+    <link rel="stylesheet" href="style_login.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container">
+            <form onsubmit="event.preventDefault(); entrar();">
+                <h1><span class="material-symbols-outlined">account_circle</span></h1>
+                <input id="usuario" type="text" placeholder="Usuário" required>
+                <input id="senha" type="password" placeholder="Senha" required>
+                <button type="button" onclick="entrar()">Entrar</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="script_login.js"></script>
+</body>
+
+</html>

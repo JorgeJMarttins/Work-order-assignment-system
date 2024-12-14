@@ -1,0 +1,20 @@
+[
+    {
+        "codigoCentroDistribuicao": 1,
+        "nome": "Cenoura",
+        "cidade": "Ribeirão Preto",
+        "estado": "São Paulo"
+    },
+    {
+        "codigoCentroDistribuicao": 2,
+        "nome": "Repolho",
+        "cidade": "São Paulo",
+        "estado": "São Paulo"
+    },
+    {
+        "codigoCentroDistribuicao": 3,
+        "nome": "Alface",
+        "cidade": "Campinas",
+        "estado": "São Paulo"
+    }
+]

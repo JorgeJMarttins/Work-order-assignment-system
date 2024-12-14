@@ -1,0 +1,173 @@
+[
+    {
+        "codigoMecanico": 1,
+        "codigoCentroDistribuicao": 1,
+        "nome": "Murilo Correia Sousa",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 2,
+        "codigoCentroDistribuicao": 1,
+        "nome": "Enzo Azevedo Sousa",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 3,
+        "codigoCentroDistribuicao": 1,
+        "nome": "Luis Costa Melo",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 4,
+        "codigoCentroDistribuicao": 1,
+        "nome": "Pedro Rocha Cardoso",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 5,
+        "codigoCentroDistribuicao": 1,
+        "nome": "Lucas Cardoso Ferreira",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 6,
+        "codigoCentroDistribuicao": 1,
+        "nome": "Matheus Dias Alves",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 7,
+        "codigoCentroDistribuicao": 1,
+        "nome": "Kauan Carvalho Barros",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 8,
+        "codigoCentroDistribuicao": 2,
+        "nome": "Gustavo Ribeiro Martins",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 9,
+        "codigoCentroDistribuicao": 2,
+        "nome": "Arthur Oliveira Barbosa",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 10,
+        "codigoCentroDistribuicao": 2,
+        "nome": "Douglas Gomes Barbosa",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 11,
+        "codigoCentroDistribuicao": 2,
+        "nome": "Guilherme Correia Azevedo",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 12,
+        "codigoCentroDistribuicao": 2,
+        "nome": "Vinicius Araujo Barros",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 13,
+        "codigoCentroDistribuicao": 3,
+        "nome": "Pedro Rodrigues Cunha",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 14,
+        "codigoCentroDistribuicao": 3,
+        "nome": "Alex Pinto Lima",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 15,
+        "codigoCentroDistribuicao": 3,
+        "nome": "Kauan Rodrigues Barbosa",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 16,
+        "codigoCentroDistribuicao": 3,
+        "nome": "Miguel Cavalcanti Barros",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 17,
+        "codigoCentroDistribuicao": 3,
+        "nome": "Pedro Dias Azevedo",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 18,
+        "codigoCentroDistribuicao": 3,
+        "nome": "Gabriel Cavalcanti Melo",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    },
+    {
+        "codigoMecanico": 19,
+        "codigoCentroDistribuicao": 3,
+        "nome": "Miguel Silva Barros",
+        "inicioTurno": "08:00:00",
+        "fimTurno": "18:00:00",
+        "inicioAlmoco": "12:00:00",
+        "fimAlmoco": "14:00:00"
+    }
+]

@@ -1,0 +1,32 @@
+
+    {
+        "codigoUsuario": 1,
+        "nome": "Guilherme Macedo",
+        "login": "gmacedo",
+        "senha": "paocomovo#15"
+    },
+    {
+        "codigoUsuario": 2,
+        "nome": "Nathália Martins",
+        "login": "nmartins",
+        "senha": "cazaVerde@13"
+    },
+    {
+        "codigoUsuario": 3,
+        "nome": "Elisabeth Araújo",
+        "login": "earaujo",
+        "senha": "fermento#56!"
+    },
+    {
+        "codigoUsuario": 4,
+        "nome": "Fernando Gomide",
+        "login": "fgomide",
+        "senha": "xpto12#$"
+    },
+    {
+        "codigoUsuario": 5,
+        "nome": "Rodrigo Gonçalves",
+        "login": "rgoncalves",
+        "senha": "mOntAnhA%12#13"
+    }
+]

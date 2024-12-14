@@ -1,0 +1,1352 @@
+[
+    {
+        "codigoVeiculo": 1,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "D00B2DB",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 2,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "BB27EF4",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 3,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "C225E08",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 4,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "AD5ED5B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 5,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "4B62D6F",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 6,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "C116227",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 7,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "4639904",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 8,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "0086A89",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 9,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "2156C57",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 10,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "543A984",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 11,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "F4A5FBB",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 12,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "AC02E09",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 13,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "F64CAE8",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 14,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "EA04408",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 15,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "F9E9A0C",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 16,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "E5ACEEA",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 17,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "5EF4049",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 18,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "47F85D7",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 19,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "DF5A412",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 20,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "BB57D6F",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 21,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "897B18B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 22,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "13E7329",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 23,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "294E289",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 24,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "E1F924B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 25,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "02F1683",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 26,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "1C8E347",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 27,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "BD927D0",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 28,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "2B137E3",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 29,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "F8189EC",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 30,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "64BD788",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 31,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "E68C5B6",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 32,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "FB3150E",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 33,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "634E41B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 34,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "FB29CB4",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 35,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "FD9E6E6",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 36,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "9C15F4D",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 37,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "CE448E6",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 38,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "E45DA49",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 39,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "559D6F0",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 40,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "113A8B7",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 41,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "A120033",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 42,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "F51FDB3",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 43,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "19B16CF",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 44,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "441FC1C",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 45,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "BE68FE5",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 46,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "E7BADDB",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 47,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "A2C22ED",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 48,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "78D135B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 49,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "4D7C2C9",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 50,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "EDE57B9",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 51,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "BBBFEEC",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 52,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "6F35FBF",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 53,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "13ADE25",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 54,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "94D9DCE",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 55,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "2057762",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 56,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "F2B544F",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 57,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "4B0B486",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 58,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "43FE9C7",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 59,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "F323328",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 60,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "B4AE963",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 61,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "7C98BE0",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 62,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "8522E58",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 63,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "56EBF0B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 64,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "D4D1B84",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 65,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "7311D87",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 66,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "074B0DB",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 67,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "EDF377E",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 68,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "9CDE0CA",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 69,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "58ABFF9",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 70,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "491E3B7",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 71,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "372DFDD",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 72,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "8DA5F3A",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 73,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "C2D258B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 74,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "FC2AFC5",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 75,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "5C06BA8",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 76,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "23BD4A2",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 77,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "4FEB784",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 78,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "18138B0",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 79,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "DC8645A",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 80,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "6CCC2EF",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 81,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "0159390",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 82,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "B29A554",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 83,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "0362A1C",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 84,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "6249BF6",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 85,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "799F8DD",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 86,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "A632833",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 87,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "79E4D9D",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 88,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "74B6854",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 89,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "7F365ED",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 90,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "6E97378",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 91,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "2090033",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 92,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "5BBB1CB",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 93,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "E434FAE",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 94,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "F6A5F29",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 95,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "3CBB53C",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 96,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "84F6B15",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 97,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "8FC80A1",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 98,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "D3A2D55",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 99,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "E7CE5FB",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 100,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "AE8012A",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 101,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "DEB41FA",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 102,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "36532BA",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 103,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "DEBFDB4",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 104,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "B9FEF1B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 105,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "1FEDB0B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 106,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "6D6ED4D",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 107,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "9C31108",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 108,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "0822E1C",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 109,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "C6EE51A",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 110,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "A9CFC43",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 111,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "BB26E22",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 112,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "7870DE9",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 113,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "A2355A7",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 114,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "A0BF106",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 115,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "FE2861E",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 116,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "955F3B1",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 117,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "1C0B924",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 118,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "1AD223D",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 119,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "529BDFF",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 120,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "07BB86B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 121,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "9586E53",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 122,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "5665D6A",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 123,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "19BF1B9",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 124,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "3E82AA3",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 125,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "47EC863",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 126,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "77614EE",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 127,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "FD582E4",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 128,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "70764B0",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 129,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "137840C",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 130,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "709FCE8",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 131,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "F870FFA",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 132,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "2AF35E3",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 133,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "99BFD4F",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 134,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "BDE47FE",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 135,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "E198C4B",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 136,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "30A8313",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 137,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "96688E9",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 138,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "2576E2A",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 139,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "1315A15",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 140,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "FCC3B90",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 141,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "F17DBF1",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 142,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "C9A84E7",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 143,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "77B9904",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 144,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "365A51D",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 145,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "E139C0C",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 146,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "0945708",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 147,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Renault",
+        "modelo": "L2H2",
+        "ano": 2023,
+        "placa": "0408327",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 150,
+        "codigoCentroDistribuicao": 1,
+        "fabricante": "Volkswagen",
+        "modelo": "280",
+        "ano": 2024,
+        "placa": "A0GP809",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 151,
+        "codigoCentroDistribuicao": 2,
+        "fabricante": "Volkswagen",
+        "modelo": "280",
+        "ano": 2024,
+        "placa": "H3UB312",
+        "velocidadeMedia": 45
+    },
+    {
+        "codigoVeiculo": 152,
+        "codigoCentroDistribuicao": 3,
+        "fabricante": "Volkswagen",
+        "modelo": "280",
+        "ano": 2024,
+        "placa": "Q7UZ782",
+        "velocidadeMedia": 45
+    }
+]

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #658070;
+            background-image: url("fundo.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        header {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        #Logo {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            width: 1300px; /* Aumenta a largura */
+            max-height: 85vh; /* Ajusta o comprimento da tela */
+            padding: 20px;
+            margin-top: 90px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            overflow-y: auto; 
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #fafafa;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #81a425;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #6c8e1f;
+        }
+
+        #planilha {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #areaDaTabela {
+            flex-grow: 1;
+            margin-top: 30px;
+            overflow-y: auto;
+            max-height: 400px; /* Limita a altura da área da tabela */
+        }
+
+        #pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .page-button {
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #81a425;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .page-button.active {
+            background-color: #1d4f2b;
+        }
+
+        #voltar {
+            cursor: pointer;
+            width: 60px;
+        }
+    </style>
+    <title>Programações</title>
+</head>
+
+<body>
+    <header>
+        <img onclick='window.location.href="paginaprincipal.html"' src="logo.png" id="Logo" alt="Logo">
+    </header>
+
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form>
+                <div id="areaSeta"></div>
+                <div id="planilha">
+                    <div>
+                        <p>Data</p>
+                        <p><input id="buscaPorData" type="date" onchange="filtrarOrdens()"></p>
+                    </div>
+                    <div>
+                        <p>Nome mecanico</p>
+                        <p><input id="buscaPorCD" type="text" oninput="filtrarOrdens()"></p>
+                    </div>
+                </div>
+                <div id="areaDaTabela"></div>
+                <div id="pagination"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let programacoes = [];
+        const linhas = 15;
+        let pagina = 1;
+
+        function tabelaPrincipal() {
+            const areaTabela = document.getElementById("areaDaTabela");
+            areaTabela.innerHTML = "";
+            let table = document.createElement("table");
+            table.id = "tabelaProgramacao";
+            table.innerHTML = `<tr>
+                <th>Data Criação</th><th>Centro de Distribuição</th><th>Ordem de Serviço</th><th>Tipo Manutenção</th><th>Data Criação</th><th>Tempo Estimado</th><th>Status</th>
+            </tr>`;
+        
+            const urlParams = new URLSearchParams(window.location.search);
+            const codigoCentroDistribuicao = urlParams.get("codigoCentroDistribuicao"); // Obtém o ID do centro da URL
+        
+            fetch("http://localhost:8081/programacao")
+                .then(res => res.json())
+                .then(dados => {
+                    programacoes = dados.recordsets[0];
+        
+                    // Filtra programações pelo codigoCentroDistribuicao da URL
+                    const filteredProgramacoes = codigoCentroDistribuicao
+                    ? programacoes.filter(prog => prog.codigoCentroDistribuicao.toString() === codigoCentroDistribuicao)
+                    : programacoes;
+
+        
+                    renderTabela(filteredProgramacoes);
+                    renderizarPaginacao(filteredProgramacoes);
+                })
+                .catch(console.error);
+        }
+        
+
+        function filtrarOrdens() {
+            const buscaPorData = document.getElementById("buscaPorData").value;
+            const buscaPorCD = document.getElementById("buscaPorCD").value.toLowerCase();
+
+            const filteredProgramacoes = programacoes.filter(prog => {
+                const Data = buscaPorData ? prog.Data === buscaPorData : true;
+                const CD = buscaPorCD ? prog.codigoCentroDistribuicao.toLowerCase().includes(buscaPorCD) : true;
+                return Data && CD;
+            });
+
+            renderTabela(filteredProgramacoes);
+            renderizarPaginacao(filteredProgramacoes.length);
+        }
+
+        function renderTabela(filteredData = programacoes) {
+            const areaTabela = document.getElementById("areaDaTabela");
+            areaTabela.innerHTML = "";
+            let table = document.createElement("table");
+            table.id = "tabelaProgramacao";
+            table.innerHTML = `<tr>
+                <th>Nome Mecanico</th><th>Codigo Mecanico</th><th>Data Criação Programacão</th><th>Centro de Distribuição</th><th>Numero Ordem de Serviço</th><th>Tipo Manutenção</th><th>Data Criação Ordem</th><th>Tempo Estimado</th><th>Horario Estimado</th><th>Status</th>
+            </tr>`;
+
+            const start = (pagina - 1) * linhas;
+            const end = start + linhas;
+            const pageData = filteredData.slice(start, end);
+
+            pageData.forEach(prog => {
+                table.innerHTML += `<tr>
+                    <td>${prog.nome}</td>
+                    <td>${prog.codigoMecanico}</td>
+                    <td>${formatarData(prog.Data)}</td>
+                    <td>${prog.codigoCentroDistribuicao}</td>
+                    <td>${prog.numeroOrdemServico}</td>
+                    <td>${prog.tipoManutencao}</td>
+                    <td>${formatarData(prog.criadaEm)}</td>
+                    <td>${formatarHora(prog.tempoEstimado)}</td>
+                    <td>${(prog.Horario)}</td>
+                    <td>${prog.status}</td>
+                </tr>`;
+            });
+
+            areaTabela.appendChild(table);
+        }
+
+        function renderizarPaginacao(filteredData = programacoes) {
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+
+            const pageCount = Math.ceil(filteredData.length / linhas);
+
+            for (let i = 1; i <= pageCount; i++) {
+                const button = document.createElement("div");
+                button.innerText = i;
+                button.classList.add("page-button");
+                button.classList.toggle("active", i === pagina);
+                button.addEventListener("click", () => {
+                    pagina = i;
+                    renderTabela(filteredData);
+                    renderizarPaginacao(filteredData);
+                });
+                pagination.appendChild(button);
+            }
+        }
+
+        function formatarData(data) {
+            const date = new Date(data);
+            return date.toISOString().split('T')[0].split('-').reverse().join('/');
+        }
+        
+
+        function formatarHora(time) {
+            const data = new Date(time);
+            let horas = data.getUTCHours();
+            let minutos = data.getMinutes();
+
+            if (minutos < 10) {
+                minutos = `0${minutos}`;
+            }
+
+            return `${horas}:${minutos}`;
+        }
+
+        window.onload = tabelaPrincipal;
+    </script>
+</body>
+
+</html>
+<!-- aumentar o tamanho da tabela -->

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #658070;
+            background-image: url("fundo.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+        }
+
+        header {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        table,
+        button {
+            background-color: white;
+            border: white;
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            height: 55px;
+        }
+
+        button {
+            font-size: 20px;
+            border: 2px solid #81a425;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #81a425;
+            color: black;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            width: 900px;
+            min-height: 480px;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        #Logo {
+            width: 100px;
+            height: auto;
+        }
+
+        td,
+        .cabecalho {
+            border: solid black 2px;
+            border-collapse: collapse;
+        }
+
+        #planilha {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #voltar {
+            cursor: pointer;
+            width: 60px;
+        }
+
+        .containerBotoes {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .botao1 {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #0a5b3c;
+            color: white;
+            border: solid black 2px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .botao2 {
+            width: 55px;
+            height: 55px;
+            background-color: #fffbe4;
+            color: black;
+            border: solid black 2px;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 5px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 100%;
+            min-height: calc(100vh - 150px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        #areaDaTabela {
+            flex-grow: 1;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .page-button {
+            margin: 0 5px;
+            padding: 5px 15px;
+            border: 1px solid #81a425;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .page-button.active {
+            background-color: #81a425;
+            color: white;
+        }
+
+        .page-button:hover {
+            background-color: #81a425;
+            color: white;
+        }
+    </style>
+    <title>Mecânicos</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" id="Logo" alt="Logo">
+    </header>
+<!-- melhorar a renderização dos filtros -->
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form onsubmit="return false;">
+                <div id="areaSeta" onclick="voltar()"><img id="voltar" src="voltar.png" alt="Voltar"></div>
+                <table>
+                    <tr>
+                        <th><button id="botaoMecanicos">Mecânicos</button></th>
+                        <th><button id="botaoVeiculos" onclick="telaDeVeiculos()">Veículos</button></th>
+                    </tr>
+                </table>
+                <div id="planilha">
+                    <div>
+                        <p>Código do Mecânico</p>
+                        <input id="buscaPorIDMecanicos" type="text" oninput="aplicarFiltros()">
+                    </div>
+                    <div>
+                        <p>Nome do Mecânico</p>
+                        <input id="buscaPorNome" type="text" oninput="aplicarFiltros()">
+                    </div>
+                    <div>
+                        <p>Centro de Distribuição</p>
+                        <select name="" id="buscaPorCD" onchange="aplicarFiltros()">
+                            <option value="">Selecione um Centro</option>
+                            <option value="1">Ribeirão Preto</option>
+                            <option value="2">São Paulo</option>
+                            <option value="3">Campinas</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <!-- Área da Tabela com rolagem -->
+                <div id="areaDaTabela"></div>
+                <div class="pagination" id="pagination"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let mecanicos = [];
+        let currentPage = 1;
+        const rowsPerPage = 15;
+
+        function criarTabelaMecanicos(event) {
+            if (event) event.preventDefault();
+            document.querySelector("#botaoVeiculos").style.backgroundColor = "white";
+            document.querySelector("#botaoMecanicos").style.backgroundColor = "#81a425";
+
+            fetch("https://cenoura.glitch.me/mecanicos")
+                .then(res => res.json())
+                .then(dados => {
+                    mecanicos = dados;
+                    renderizarTabelaMecanicos(dados);
+                })
+                .catch(console.error);
+        }
+
+        function renderizarTabelaMecanicos(dados) {
+            const areaTabela = document.getElementById("areaDaTabela");
+            areaTabela.innerHTML = "";
+            let table = document.createElement("table");
+            table.id = "tableMecanicos";
+            table.innerHTML = `<tr>
+                <th>Nome</th><th>Código Mecânico</th><th>Centro de Distribuição</th>
+                <th>Início do Turno</th><th>Fim do Turno</th><th>Início do Almoço</th><th>Fim do Almoço</th>
+            </tr>`;
+            const start = (currentPage - 1) * rowsPerPage;
+            const paginatedData = dados.slice(start, start + rowsPerPage);
+
+            paginatedData.forEach(dado => {
+                table.innerHTML += `<tr>
+                    <td>${dado.nome}</td><td>${dado.codigoMecanico}</td>
+                    <td>${dado.codigoCentroDistribuicao == 1 ? "Ribeirão Preto" : dado.codigoCentroDistribuicao == 2 ? "São Paulo" : "Campinas"}</td><td>${dado.inicioTurno}</td>
+                    <td>${dado.fimTurno}</td><td>${dado.inicioAlmoco}</td><td>${dado.fimAlmoco}</td>
+                </tr>`;
+            });
+            areaTabela.appendChild(table);
+            renderizarPaginacao(dados.length);
+        }
+
+        function renderizarPaginacao(totalRows) {
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+            const pageCount = Math.ceil(totalRows / rowsPerPage);
+
+            for (let i = 1; i <= pageCount; i++) {
+                const button = document.createElement("div");
+                button.innerText = i;
+                button.classList.add("page-button");
+                button.classList.toggle("active", i === currentPage);
+                button.addEventListener("click", () => {
+                    currentPage = i;
+                    renderizarTabelaMecanicos(mecanicos);
+                });
+                pagination.appendChild(button);
+            }
+        }
+
+        function aplicarFiltros() {
+    const idInput = document.getElementById("buscaPorIDMecanicos").value.toLowerCase();
+    const nomeInput = document.getElementById("buscaPorNome").value.toLowerCase();
+    const ctInput = document.getElementById("buscaPorCD").value;
+
+    const filtrados = mecanicos.filter(mecanico => {
+        // Aplica todos os filtros de forma cumulativa
+        const filtraID = !idInput || mecanico.codigoMecanico.toString().toLowerCase().includes(idInput);
+        const filtraNome = !nomeInput || mecanico.nome.toLowerCase().includes(nomeInput);
+        const filtraCD = !ctInput || mecanico.codigoCentroDistribuicao.toString() === ctInput;
+
+        // Só retorna o mecânico se todos os critérios forem atendidos
+        return filtraID && filtraNome && filtraCD;
+    });
+
+    currentPage = 1; // Reinicia a página atual para garantir a exibição correta
+    renderizarTabelaMecanicos(filtrados); // Renderiza a tabela com os resultados filtrados
+}
+
+
+
+
+        function telaDeVeiculos() {
+            window.location.href = "paginaveiculos.html";
+        }
+
+        function voltar() {
+            window.location.href = "paginaprincipal.html";
+        }
+
+        window.onload = function () {
+            criarTabelaMecanicos();
+        };
+    </script>
+</body>
+
+</html>

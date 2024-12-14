@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #658070;
+            background-image: url("fundo.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+        }
+
+        header {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        table,
+        button {
+            background-color: white;
+            border: white;
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            height: 55px;
+        }
+
+        button {
+            font-size: 20px;
+            border: 2px solid #81a425;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #81a425;
+            color: black;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            width: 900px;
+            min-height: 480px;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        #Logo {
+            width: 100px;
+            height: auto;
+        }
+
+        td,
+        .cabecalho {
+            border: solid black 2px;
+            border-collapse: collapse;
+        }
+
+        #planilha {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #voltar {
+            cursor: pointer;
+            width: 60px;
+        }
+
+        .containerBotoes {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .botao1 {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #0a5b3c;
+            color: white;
+            border: solid black 2px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .botao2 {
+            width: 55px;
+            height: 55px;
+            background-color: #fffbe4;
+            color: black;
+            border: solid black 2px;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 5px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 100%;
+            min-height: calc(100vh - 150px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        #areaDaTabela {
+            flex-grow: 1;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .page-button {
+            margin: 0 5px;
+            padding: 5px 15px;
+            border: 1px solid #81a425;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .page-button.active {
+            background-color: #81a425;
+            color: white;
+        }
+
+        .page-button:hover {
+            background-color: #81a425;
+            color: white;
+        }
+    </style>
+    <title>Veículos</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" id="Logo" alt="Logo">
+    </header>
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form onsubmit="return false;">
+                <div id="areaSeta" onclick="voltar()">
+                    <img id="voltar" src="voltar.png" alt="Voltar">
+                </div>
+                <table>
+                    <tr>
+                        <th><button id="botaoMecanicos" onclick="telaDeMecanicos()">Mecânicos</button></th>
+                        <th><button id="botaoVeiculos" onclick="criarTabelaVeiculos(event)">Veículos</button></th>
+                    </tr>
+                </table>
+
+                <div id="planilha">
+                    <div>
+                        <p>Código do Veículo</p>
+                        <input id="buscaPorIDVeiculos" type="text" oninput="aplicarFiltros()">
+                    </div>
+                    <div>
+                        <p>Placa do Veículo</p>
+                        <input id="buscaPorPlaca" type="text" oninput="aplicarFiltros()">
+                    </div>
+                    <div>
+                        <p>Centro de Distribuição do Veículo</p>
+                        <select name="" id="buscaPorCD" onchange="aplicarFiltros()">
+                            <option value="">Selecione um Centro</option>
+                            <option value="1">Ribeirão Preto</option>
+                            <option value="2">São Paulo</option>
+                            <option value="3">Campinas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Área da Tabela -->
+                <div id="areaDaTabela"></div>
+                <!-- Paginação -->
+                <div class="pagination" id="pagination"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let veiculos = [];
+        let currentPage = 1;
+        const rowsPerPage = 15;
+
+        // Função para criar a tabela de veículos
+        function criarTabelaVeiculos(event) {
+            event.preventDefault();
+            document.querySelector("#botaoVeiculos").style.backgroundColor = "#81a425";
+            document.querySelector("#botaoMecanicos").style.backgroundColor = "white";
+
+            fetch("https://cenoura.glitch.me/veiculos")
+                .then(res => res.json())
+                .then(dados => {
+                    veiculos = dados;
+                    aplicarFiltros(); // Garante que filtros sejam aplicados após carregar dados
+                })
+                .catch(console.error);
+        }
+
+        // Função para aplicar todos os filtros interconectados
+        function aplicarFiltros() {
+            const idInput = document.getElementById("buscaPorIDVeiculos").value.toLowerCase();
+            const placaInput = document.getElementById("buscaPorPlaca").value.toLowerCase();
+            const ctInput = document.getElementById("buscaPorCD").value;
+
+            // Filtragem interconectada
+            const filtrados = veiculos.filter(veiculo => {
+                const filtraID = !idInput || veiculo.codigoVeiculo.toString().toLowerCase().includes(idInput);
+                const filtraPlaca = !placaInput || veiculo.placa.toLowerCase().includes(placaInput);
+                const filtraCT = !ctInput || veiculo.codigoCentroDistribuicao.toString() === ctInput;
+
+                return filtraID && filtraPlaca && filtraCT;
+            });
+
+            currentPage = 1; // Reinicia a página ao aplicar novos filtros
+            renderizarTabelaVeiculos(filtrados);
+        }
+
+        // Função para renderizar a tabela de veículos
+        function renderizarTabelaVeiculos(dados) {
+            const areaTabela = document.getElementById("areaDaTabela");
+            areaTabela.innerHTML = "";
+            let table = document.createElement("table");
+            table.innerHTML = `<tr>
+                <th>Código Veículo</th>
+                <th>Placa</th>
+                <th>Centro de Distribuição</th>
+                <th>Fabricante</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Velocidade Média</th>
+            </tr>`;
+
+            const start = (currentPage - 1) * rowsPerPage;
+            const paginatedData = dados.slice(start, start + rowsPerPage);
+
+            paginatedData.forEach(dado => {
+                table.innerHTML += `<tr>
+                    <td>${dado.codigoVeiculo}</td>
+                    <td>${dado.placa}</td>
+                    <td>${dado.codigoCentroDistribuicao == 1 ? "Ribeirão Preto" : dado.codigoCentroDistribuicao == 2 ? "São Paulo" : "Campinas"}</td>
+                    <td>${dado.fabricante}</td>
+                    <td>${dado.modelo}</td>
+                    <td>${dado.ano}</td>
+                    <td>${dado.velocidadeMedia}</td>
+                </tr>`;
+            });
+            areaTabela.appendChild(table);
+            renderizarPaginacao(dados.length);
+        }
+
+        // Função para renderizar a paginação
+        function renderizarPaginacao(totalRows) {
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+            const pageCount = Math.ceil(totalRows / rowsPerPage);
+
+            for (let i = 1; i <= pageCount; i++) {
+                const button = document.createElement("div");
+                button.innerText = i;
+                button.classList.add("page-button");
+                button.classList.toggle("active", i === currentPage);
+                button.addEventListener("click", () => {
+                    currentPage = i;
+                    aplicarFiltros();
+                });
+                pagination.appendChild(button);
+            }
+        }
+
+        // Navegação
+        function telaDeMecanicos() {
+            window.location.href = "paginamecanicos.html";
+        }
+
+        function voltar() {
+            window.location.href = "paginaprincipal.html";
+        }
+
+        window.onload = function () {
+            criarTabelaVeiculos(event);
+        };
+    </script>
+</body>
+
+</html>
